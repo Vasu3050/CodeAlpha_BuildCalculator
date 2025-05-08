@@ -1,13 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" class="transition-colors duration-500 ...">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1 class=""> Jai shree ram</h1>
-    <script src="script.js"></script>    
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body
+    class="flex items-center justify-center bg-background-light dark:bg-background-dark w-screen h-screen"
+  >
+    <div
+      class="p-2 rounded-md flex flex-row min-w-[100%] min-h-[100%] md:min-w-[80%] md:min-h-[80%] bg-background-surfaceLight dark:bg-background-surfaceDark"
+    >
+      <div class="h-[4%] w-[100%] flex justify-end">
+        <button id="themeTogglebtn">
+          <span id="toggleIcon"
+            ><img class="max-h-6" src="../icons/night-icon.png" alt="moon icon"
+          /></span>
+        </button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
 </html>

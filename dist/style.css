@@ -554,22 +554,131 @@ video {
   display: none;
 }
 
-.bg-black {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity, 1));
+.flex {
+  display: flex;
 }
 
-.bg-slate-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(100 116 139 / var(--tw-bg-opacity, 1));
+.hidden {
+  display: none;
 }
 
-.bg-slate-950 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(2 6 23 / var(--tw-bg-opacity, 1));
+.h-\[4\%\] {
+  height: 4%;
 }
 
-.text-white {
+.h-screen {
+  height: 100vh;
+}
+
+.h-6 {
+  height: 1.5rem;
+}
+
+.max-h-\[100\%\] {
+  max-height: 100%;
+}
+
+.max-h-\[\] {
+  max-height: ;
+}
+
+.max-h-2 {
+  max-height: 0.5rem;
+}
+
+.max-h-6 {
+  max-height: 1.5rem;
+}
+
+.min-h-\[100\%\] {
+  min-height: 100%;
+}
+
+.w-\[100\%\] {
+  width: 100%;
+}
+
+.w-screen {
+  width: 100vw;
+}
+
+.w-6 {
+  width: 1.5rem;
+}
+
+.min-w-\[100\%\] {
+  min-width: 100%;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.bg-background-light {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 247 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-background-surfaceLight {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity, 1));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
+.text-yellow-400 {
   --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  color: rgb(250 204 21 / var(--tw-text-opacity, 1));
+}
+
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-500 {
+  transition-duration: 500ms;
+}
+
+.dark\:block:is(.dark *) {
+  display: block;
+}
+
+.dark\:bg-background-dark:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 21 28 / var(--tw-bg-opacity, 1));
+}
+
+.dark\:bg-background-surfaceDark:is(.dark *) {
+  --tw-bg-opacity: 1;
+  background-color: rgb(55 65 81 / var(--tw-bg-opacity, 1));
+}
+
+@media (min-width: 768px) {
+  .md\:min-h-\[80\%\] {
+    min-height: 80%;
+  }
+
+  .md\:min-w-\[80\%\] {
+    min-width: 80%;
+  }
 }
