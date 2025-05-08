@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.8.0/math.min.js"></script>
+
   </head>
+
   <body
     class="text-text-light dark:text-text-dark flex items-center justify-center bg-background-light dark:bg-background-dark w-screen h-screen"
   >
@@ -26,11 +29,10 @@
       </div>
       <!-- dark and light mode ends -->
 
-      <div
-        class="bg-display-light dark:bg-display-dark min-h-32 rounded-md w-[100%]"
-      >
-        0123456789
+      <div id="display" class="bg-display-light dark:bg-display-dark min-h-32 rounded-md w-full px-4 py-2 text-right text-5xl font-mono relative overflow-x-auto ">
+        <span id="displayContent"></span>|<span id="cursor" class="inline-block w-[1px] bg-keyEqual-light dark:bg-keyEqual-dark h-full animate-blink"></span>
       </div>
+      
       <!-- display ends -->
 
       <div class="w-full h-[60%] grid grid-cols-4 gap-1 my-6">
