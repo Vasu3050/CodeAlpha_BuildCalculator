@@ -43,10 +43,6 @@ buttons.forEach((btn) => {
   });
 });
 
-document.querySelectorAll("button").forEach((btn) => {
-  btn.classList.add("transition-transform", "duration-100", "ease-in-out");
-});
-
 const display = document.getElementById("displayContent");
 const cursor = document.getElementById("cursor");
 
@@ -76,25 +72,37 @@ function updateDisplay(value) {
 let currentValue = "";
 updateDisplay(currentValue);
 
+const operators = ["/", "+", "-", "*", "("];
+
 function handleInput(input) {
-    if (input === "=") {
-      try {
-        const evaluated = evaluate(currentValue);
-        currentValue = evaluated.toString();
-      } catch {
-        currentValue = "Error";
-      }
-    } else if (input === "⌫") {
-      currentValue = currentValue.slice(0, -1);
-    } else if (input === "AC") {
-      currentValue = "";
-    } else {
-      currentValue += input;
+  if (input === "=") {
+    try {
+      const evaluated = evaluate(currentValue);
+      currentValue = evaluated !== undefined ? evaluated.toString() : "Error";
+    } catch {
+      currentValue = "Error...";
     }
-  
-    updateDisplay(currentValue);
+  } else if (input === "⌫") {
+    currentValue = currentValue.slice(0, -1);
+  } else if (input === "AC" || input === "Escape") {
+    currentValue = "";
+  } else if (currentValue === "Error...") {
+    currentValue = "";
+    currentValue += input;
+  } else if (
+    operators.includes(input) &&
+    operators.some((op) => {
+      return currentValue.endsWith(op);
+    })
+  ) {
+    currentValue = currentValue.slice(0, -1);
+    currentValue += input;
+  } else {
+    currentValue += input;
   }
-  
+
+  updateDisplay(currentValue);
+}
 
 document.querySelectorAll("button").forEach((button) => {
   button.addEventListener("click", () => {
@@ -117,7 +125,7 @@ document.addEventListener("keydown", (e) => {
     handleInput("=");
   } else if (key === "Backspace") {
     handleInput("⌫");
+  } else if (key === "Escape") {
+    handleInput("AC");
   }
 });
-
-
