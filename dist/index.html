@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="transition-colors duration-500 ...">
+<html lang="en" class="transition-colors duration-1000">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,16 +7,112 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body
-    class="flex items-center justify-center bg-background-light dark:bg-background-dark w-screen h-screen"
+    class="text-text-light dark:text-text-dark flex items-center justify-center bg-background-light dark:bg-background-dark w-screen h-screen"
   >
     <div
-      class="p-2 rounded-md flex flex-row min-w-[100%] min-h-[100%] md:min-w-[80%] md:min-h-[80%] bg-background-surfaceLight dark:bg-background-surfaceDark"
+      class="p-2 rounded-md flex flex-col min-w-[100%] min-h-[100%] md:min-w-[80%] md:min-h-[80%] bg-background-surfaceLight dark:bg-background-surfaceDark"
     >
-      <div class="h-[4%] w-[100%] flex justify-end">
-        <button id="themeTogglebtn">
-          <span id="toggleIcon"
-            ><img class="max-h-6" src="../icons/night-icon.png" alt="moon icon"
-          /></span>
+      <div class="h-[4%] w-[100%] p-1 m-1">
+        <div class="h-[100%] w-[100%] flex justify-end">
+          <button id="themeTogglebtn">
+            <span id="toggleIcon"
+              ><img
+                class="max-h-4"
+                src="../icons/night-icon.png"
+                alt="moon icon"
+            /></span>
+          </button>
+        </div>
+      </div>
+      <!-- dark and light mode ends -->
+
+      <div
+        class="bg-display-light dark:bg-display-dark min-h-32 rounded-md w-[100%]"
+      >
+        0123456789
+      </div>
+      <!-- display ends -->
+
+      <div class="w-full h-[60%] grid grid-cols-4 gap-1 my-6">
+        <button
+          class="p-4 text-xl rounded-full bg-keyAccent-light dark:bg-keyAccent-dark"
+        >
+          AC
+        </button>
+        <button
+          class="p-4 text-xl rounded-full bg-keyops-light dark:bg-keyops-dark"
+        >
+          (
+        </button>
+        <button
+          class="p-4 text-xl rounded-full bg-keyops-light dark:bg-keyops-dark"
+        >
+          )
+        </button>
+        <button
+          class="p-4 text-xl rounded-full bg-keyops-light dark:bg-keyops-dark"
+        >
+          ÷
+        </button>
+
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          7
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          8
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          9
+        </button>
+        <button
+          class="p-4 text-xl rounded-full bg-keyops-light dark:bg-keyops-dark"
+        >
+          ×
+        </button>
+
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          4
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          5
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          6
+        </button>
+        <button
+          class="p-4 text-xl rounded-full bg-keyops-light dark:bg-keyops-dark"
+        >
+          −
+        </button>
+
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          1
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          2
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          3
+        </button>
+        <button
+          class="p-4 text-xl rounded-full bg-keyops-light dark:bg-keyops-dark"
+        >
+          +
+        </button>
+
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          0
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          .
+        </button>
+        <button class="p-4 text-xl rounded-full bg-key-light dark:bg-key-dark">
+          ⌫
+        </button>
+        <button
+          class="p-4 text-xl rounded-full bg-purple-50 dark:bg-keyEqual-dark"
+        >
+          =
         </button>
       </div>
     </div>

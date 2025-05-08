@@ -13,11 +13,15 @@ export default {
         },
         display: {
           light: '#EBCFF6',     // Light lavender
-          dark: '#322630',      // Dim purple-gray
+          dark: '#663399',      // Dim purple-gray
         },
         key: {
-          light: '#F3E2F6',     // Pale lavender for number keys
+          light: '#F3E2F9',     // Pale lavender for number keys
           dark: '#3B313A',      // Soft charcoal-violet for number keys
+        },
+        keyops: {
+          light: '#FFCCFF',     // Pale lavender for number keys
+          dark: '#996690',      // Soft charcoal-violet for number keys
         },
         keyAccent: {
           light: '#FFDADA',     // Light peach for 'AC' and ops
