@@ -72,7 +72,7 @@ function updateDisplay(value) {
 let currentValue = "";
 updateDisplay(currentValue);
 
-const operators = ["/", "+", "-", "*", "("];
+const operators = ["/", "+", "-", "*"];
 
 function handleInput(input) {
   if (input === "=") {
